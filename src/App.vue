@@ -1,16 +1,27 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg = "Bienvenue sur l'interface de connexion" />
+  <LoginForm />
+  <ForgotPassword />
+  <SignIn />
+
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import LoginForm from './components/LoginForm.vue'
+import ForgotPassword from './components/ForgotPassword.vue'
+import SignIn from './components/SignIn.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    LoginForm,
+    HelloWorld,
+    ForgotPassword,
+    SignIn
+}
 }
 </script>
 
